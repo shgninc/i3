@@ -208,3 +208,8 @@ bindsym XF86Calculator exec --no-startup-id "xfce4-terminal -e qalc"
 #### Assign app to workspace
 assign [class="teleg"] "p"
 assign [class="winbox.exe"] "p"
+
+# border
+new_window pixel 1
+new_float none
+bindsym $mod+b border toggle
