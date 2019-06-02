@@ -1,6 +1,7 @@
 #!/bin/bash
 
-images='/usr/local/share/backgrounds'
+#images='/usr/local/share/backgrounds'
+images='/home/shgn/Pictures/back'
 
 cnt=$(ls $images/*.png | wc -l)
 randnum=$((RANDOM%$cnt+1))
