@@ -35,12 +35,18 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# window colours: border background text
+client.focused        #0F0F0F #7FB256 #F5F5FF
+client.focused_inactive    #0F0F0F #7FB256 #E5E5E5
+client.unfocused    #0F0F0F #5697B2 #E5E5E5
+client.urgent #0F0F0F #BC9B54 #E5E5E5
+
 # start dmenu (a program launcher)
 #bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $mod+j focus left
@@ -161,33 +167,18 @@ bindsym --release $mod+Shift+Print exec import png:- | xclip -selection clipboar
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        #status_command /usr/local/bin/i3status-custom.sh
-        status_command i3status
-	mode hide
-	hidden_state hide
-	modifier Mod4
-	font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-	font pango:DejaVu Sans Mono 10
-	#colors {
-        #  background #101010
-        #  statusline #ecdfc6
-        #   
-        #  focused_workspace #76d119 #101010 #76d119
-        #  active_workspace #468499 #101010 #468499
-        #  inactive_workspace #636363 #101010 #ecdfc6
-        #  urgent_workspace #df503e #df503e #ecdfc6
-	#}    
-        colors {
-          background #000000
-          statusline #FFFFFF
-          separator  #666666
 
-          focused_workspace  #F79E2B #232018 #F79E2B
-          active_workspace   #20FF18 #232018 #20FF18
-          inactive_workspace #333333 #232018 #498BAC
-          urgent_workspace   #FF0000 #D71D1D #FFFF0E
-          binding_mode       #333333 #9F170E #FFFFFF
+bar {
+        status_command conky
+        position top
+    workspace_buttons yes
+        colors  {
+        background #0F0F0F
+        statusline #D5D5D5
+        focused_workspace #F5F5FF #7FB256
+        active_workspace #E5E5E5 #5697B2
+        inactive_workspace #E5E5E5 #5697B2
+        urgent_workspace #E5E5E5 #BC9B54
         }
 }
 
