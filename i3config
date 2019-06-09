@@ -213,3 +213,7 @@ assign [class="winbox.exe"] "p"
 new_window pixel 1
 new_float none
 bindsym $mod+b border toggle
+
+#Application Keybinds
+bindsym $mod+Shift+f exec firefox
+bindsym $mod+Shift+h exec chromium
