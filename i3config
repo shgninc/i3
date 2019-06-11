@@ -229,3 +229,6 @@ mode "$mode_system" {
    bindsym Escape mode "default"
 }
 bindsym $mod+Alt_R mode "$mode_system"
+
+#Floating Windows
+for_window [title="galculator"] floating enable
