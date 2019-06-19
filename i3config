@@ -170,16 +170,26 @@ bindsym --release $mod+Shift+Print exec import png:- | xclip -selection clipboar
 # finds out, if available)
 
 bar {
-        status_command conky
+        #status_command /usr/local/bin/i3status-custom.sh
+        status_command i3status
+        #mode hide
+        #hidden_state hide
         position top
-    workspace_buttons yes
-        colors  {
-        background #0F0F0F
-        statusline #D5D5D5
-        focused_workspace #F5F5FF #7FB256
-        active_workspace #E5E5E5 #5697B2
-        inactive_workspace #E5E5E5 #5697B2
-        urgent_workspace #E5E5E5 #BC9B54
+        workspace_buttons yes
+        modifier Mod4
+        #font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+        #font pango:DejaVu Sans Mono 10
+        font pango:DejaVu Sans Mono, FontAwesome 8
+        colors {
+            background #000000
+            statusline #FFFFFF
+            separator  #666666
+
+            focused_workspace  #F79E2B #232018 #F79E2B
+            active_workspace   #20FF18 #232018 #20FF18
+            inactive_workspace #333333 #232018 #498BAC
+            urgent_workspace   #FF0000 #D71D1D #FFFF0E
+            binding_mode       #333333 #9F170E #FFFFFF
         }
 }
 
