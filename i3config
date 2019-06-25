@@ -181,7 +181,7 @@ bar {
         #font pango:DejaVu Sans Mono 10
         font pango:DejaVu Sans Mono, FontAwesome 8
         colors {
-            background #000000
+            background #002B36
             statusline #FFFFFF
             separator  #666666
 
