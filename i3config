@@ -247,3 +247,7 @@ bindsym $mod+x mode "$mode_system"
 
 #Floating Windows
 for_window [title="galculator"] floating enable
+
+#Scratchpad
+bindsym $mod+Shift+x move scratchpad
+bindsym $mod+x scratchpad show
