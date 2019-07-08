@@ -172,24 +172,20 @@ bindsym --release $mod+Shift+Print exec import png:- | xclip -selection clipboar
 bar {
         #status_command /usr/local/bin/i3status-custom.sh
         status_command i3status
-        #mode hide
-        #hidden_state hide
         position top
         workspace_buttons yes
         modifier Mod4
-        #font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-        #font pango:DejaVu Sans Mono 10
         font pango:DejaVu Sans Mono, FontAwesome 8
         colors {
-            background #002B36
-            statusline #FFFFFF
-            separator  #666666
+		statusline #FFFFFF
+		background #2b092c
+		separator  #FFBC0A	
 
-            focused_workspace  #F79E2B #232018 #F79E2B
-            active_workspace   #20FF18 #232018 #20FF18
-            inactive_workspace #333333 #232018 #498BAC
-            urgent_workspace   #FF0000 #D71D1D #FFFF0E
-            binding_mode       #333333 #9F170E #FFFFFF
+		focused_workspace  #F79E2B #232018 #F79E2B
+		active_workspace   #20FF18 #232018 #20FF18
+		inactive_workspace #333333 #232018 #498BAC
+		urgent_workspace   #FF0000 #D71D1D #FFFF0E
+		binding_mode       #333333 #9F170E #FFFFFF
         }
 }
 
@@ -228,7 +224,7 @@ bindsym XF86AudioPlay exec dbus-send --type=method_call --dest=org.mpris.MediaPl
 bindsym XF86AudioStop exec dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.vlc /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop
 
 # Special system
-set $mode_system System:   L :  | S :  | P :  | R :  | E : 
+set $mode_system System:   L : Lock | S : Suspend | P : Poweroff | R : Reboot | E : Exit
 
 mode "$mode_system" {
    font FontAwesome 8
@@ -243,7 +239,7 @@ mode "$mode_system" {
    bindsym Return mode "default"
    bindsym Escape mode "default"
 }
-bindsym $mod+x mode "$mode_system"
+bindsym $mod+Shift+z mode "$mode_system"
 
 #Floating Windows
 for_window [title="galculator"] floating enable
