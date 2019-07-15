@@ -170,8 +170,8 @@ bindsym --release $mod+Shift+Print exec import png:- | xclip -selection clipboar
 # finds out, if available)
 
 bar {
-        #status_command /usr/local/bin/i3status-custom.sh
-        status_command i3status
+        status_command /usr/local/bin/i3status-custom.sh
+        #status_command i3status
         position top
         workspace_buttons yes
         modifier Mod4
