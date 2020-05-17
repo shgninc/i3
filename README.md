@@ -1,14 +1,14 @@
 i3
 ===
 
-## Dependencies
+## Dependencies on Debian 10
 `xcompmgr`: composite manager for shadows and transparency  
 `import`: screenshot creator  
 `xclip`: clipboard manager for sending screenshot to clipboard  
 `pulseaudio-utils`: Sound system for POSTIX OSes
 
 ```bash
-sudo apt install import xcompmgr xclip pulseaudio-utils
+sudo apt install imagemagick xcompmgr xclip pulseaudio-utils
 ```
 
 ## Setup
