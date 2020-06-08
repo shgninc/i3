@@ -194,6 +194,10 @@ exec xcompmgr -n
 exec /usr/local/bin/feh-rand
 focus_follows_mouse no
 
+## Set Keyboard Layout
+#https://askubuntu.com/a/123291/25025
+#https://wiki.debian.org/Keyboard#Keyboard_configuration
+
 #### volume control
 #set $soundcard alsa_output.pci-0000_00_14.2.iec958-stereo
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
