@@ -62,6 +62,8 @@ bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
+# alternatively, set focus by Alt+Tab
+bindsym Mod1+Tab focus left
 
 # move focused window
 bindsym $mod+Shift+j move left
