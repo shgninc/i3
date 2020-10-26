@@ -1,0 +1,18 @@
+#particles-js{
+	z-index: -20;
+	width:100%;
+	height:100%;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4f5054+0,0d0d0f+100 */
+background: #4f5054; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #4f5054 0%, #0d0d0f 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #4f5054 0%,#0d0d0f 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #4f5054 0%,#0d0d0f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f5054', endColorstr='#0d0d0f',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+#particles-js.top{
+	z-index: 200;
+}
