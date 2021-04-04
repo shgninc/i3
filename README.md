@@ -42,3 +42,9 @@ Edit file `/etc/default/keyboard`:
     XKBOPTIONS="grp:alt_shift_toggle"
 
     BACKSPACE="guess"
+
+And then, to deploy config just run
+
+```bash
+udevadm trigger --subsystem-match=input --action=change 
+```
