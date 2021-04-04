@@ -8,7 +8,7 @@ i3
 `pulseaudio-utils`: Sound system for POSTIX OSes
 
 ```bash
-sudo apt install i3 xorg suckless-tools imagemagick xcompmgr xclip pulseaudio-utils
+sudo apt install i3 xorg suckless-tools slim imagemagick xcompmgr xclip pulseaudio-utils
 ```
 
 ## Setup
