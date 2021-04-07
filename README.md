@@ -48,3 +48,7 @@ And then, to deploy config just run
 ```bash
 udevadm trigger --subsystem-match=input --action=change 
 ```
+
+## Sound Setting
+
+https://askubuntu.com/a/14083/25025
