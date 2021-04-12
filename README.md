@@ -52,3 +52,9 @@ udevadm trigger --subsystem-match=input --action=change
 ## Sound Setting
 
 https://askubuntu.com/a/14083/25025
+
+## i3lock with clock
+
+To isntall i3lock with showing clock:
+
+https://github.com/Lixxia/i3lock
