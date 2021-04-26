@@ -8,7 +8,9 @@ i3
 `pulseaudio-utils`: Sound system for POSTIX OSes
 
 ```bash
-sudo apt install i3 xorg suckless-tools slim imagemagick qlipper pulseaudio-utils terminator
+sudo apt install i3 xorg suckless-tools slim imagemagick \
+                 qlipper pulseaudio-utils terminator galculator
+sudo cp slim/slim.conf /etc/slim/
 ```
 
 ## Setup
