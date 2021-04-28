@@ -3,9 +3,11 @@ i3
 
 ## Dependencies on Debian 10
 `xcompmgr`: composite manager for shadows and transparency  
-`import`: screenshot creator  
+`imagemagick`: screenshot creator  
 `xclip`: clipboard manager for sending screenshot to clipboard  
 `pulseaudio-utils`: Sound system for POSTIX OSes
+`qlipper`: cliboard manager
+`terminator`: My lovly terminal
 
 ```bash
 sudo apt install i3 xorg suckless-tools slim imagemagick \
