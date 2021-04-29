@@ -11,7 +11,7 @@ i3
 
 ```bash
 sudo apt install i3 xorg suckless-tools slim imagemagick \
-                 qlipper pulseaudio-utils terminator galculator
+                 qlipper pulseaudio-utils terminator galculator 
 sudo cp slim/slim.conf /etc/slim/
 ```
 
@@ -22,14 +22,14 @@ sudo cp slim/slim.conf /etc/slim/
 `volume`: volume control script. copy it to `/usr/local/bin`.
 
 custom shortcuts:
-* **Super + Z**: go to workspace 16 (my personal workspace)
+* **Super + Shift + f**: execute mozilla firefox
 * **Super + PrintScreen**: create a screenshot and save it to `Pictures/date.jpg`
 * **Super + Shift + PrintScreen**: create a screenshot and send it to clipboard
 * **Super + Esc**: focus on child
 * **Super + Space**: change keyboard layout  
 `i3status.conf`: custom i3 bar status. this file auto loaded if you copy it to `~/.i3status.conf`  
 `Xresources`: some custom config for better font rendering. copy it to `~/.Xresources` and restart your X session.  
-`xorg.conf.d`: this directory contains some config files for device input management like synaptic touchpad manager (tap to click, two finger tap to right click) and etc. copy this folder to `/etc/X11/` and restart your X session.  
+`xorg.conf.d`: this directory contains some config files for device input management like synaptic touchpad manager (tap to click, two finger tap to right click) and etc. copy this folder to `/etc/X11/` and restart your X session.
 
 
 ## Keyboard layout
@@ -59,6 +59,50 @@ https://askubuntu.com/a/14083/25025
 
 ## i3lock with clock
 
-To isntall i3lock with showing clock:
+To isntall i3lock with showing clock refer to:
 
 https://github.com/Lixxia/i3lock
+
+See [the i3lock home page](https://i3wm.org/i3lock/).
+
+Requirements
+------------
+- pkg-config
+- libxcb
+- libxcb-util
+- libpam-dev
+- libcairo-dev
+- libxcb-xinerama
+- libxcb-randr
+- libev
+- libx11-dev
+- libx11-xcb-dev
+- libxkbcommon >= 0.5.0
+- libxkbcommon-x11 >= 0.5.0
+
+Building i3lock
+---------------
+We recommend you use the provided package from your distribution. Do not build
+i3lock unless you have a reason to do so.
+
+First install the dependencies listed in requirements section, then run these
+commands (might need to be adapted to your OS):
+```
+autoreconf --force --install
+
+rm -rf build/
+mkdir -p build && cd build/
+
+../configure \
+  --prefix=/usr \
+  --sysconfdir=/etc \
+  --disable-sanitizers
+
+make
+```
+### Screenshots
+
+#### Idle
+![Idle state](/images/lockscreen.png?raw=true "")
+#### Key Press
+![On key press](/images/lockscreenkeypress.png?raw=true "")
