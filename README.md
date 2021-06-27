@@ -106,3 +106,10 @@ make
 ![Idle state](/images/lockscreen.png?raw=true "")
 #### Key Press
 ![On key press](/images/lockscreenkeypress.png?raw=true "")
+
+
+### i3lockmore
+
+Thanks to https://github.com/SammysHP/i3lockmore, By this command we can lock the screen with some effects on i3lock background image.
+
+   i3lockmore --image-fill /home/picture/back.jpg
