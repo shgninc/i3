@@ -1,2 +1,2 @@
 #!/bin/bash
-i3lock -i /home/shgn/Pictures/backlock.png
+i3lockmore --image-fill /home/shgn/Pictures/backlock.png
