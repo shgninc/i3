@@ -52,6 +52,23 @@ And then, to deploy config just run
 ```bash
 udevadm trigger --subsystem-match=input --action=change 
 ```
+## Touchpad Setting
+If there is laptop and using touchpad, need to make a directory and a simple configuration file:
+```bash     
+sudo mkdir -p /etc/X11/xorg.conf.d
+sudo touch /etc/X11/xorg.conf.d/90-touchpad.conf
+```
+Then paste these lines in the file:
+```
+Section "InputClass"
+        Identifier "touchpad"
+        MatchIsTouchpad "on"
+        Driver "libinput"
+        Option "Tapping" "on"
+EndSection
+```
+
+Thanks to [Cody Craven](https://cravencode.com/post/essentials/enable-tap-to-click-in-i3wm/)
 
 ## Sound Setting
 
