@@ -1,3 +1,8 @@
+# i3 config file (v4)
+#
+# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+
+set $mod Mod4
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 font pango:Ubuntu 9
 
