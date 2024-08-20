@@ -130,3 +130,7 @@ make
 Thanks to https://github.com/SammysHP/i3lockmore, By this command we can lock the screen with some effects on i3lock background image.
 
    i3lockmore --image-fill /home/picture/back.jpg
+
+### pptp configuration
+
+[PPTP_Client](https://wiki.archlinux.org/title/PPTP_Client)
