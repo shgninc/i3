@@ -79,7 +79,9 @@ pactl set-source-mute @DEFAULT_SOURCE@ toggle
 ```
 
 https://askubuntu.com/a/14083/25025
+
 https://askubuntu.com/a/1249744/25025
+
 https://forum.manjaro.org/t/muting-microphone-with-fn-f4-function-shortcuts-issue/121038/5
 
 ## i3lock with clock
