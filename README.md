@@ -1,7 +1,7 @@
 i3
 ===
 
-## Dependencies on Debian 10
+## Dependencies on Debian 12
 `xcompmgr`: composite manager for shadows and transparency  
 `imagemagick`: screenshot creator  
 `xclip`: clipboard manager for sending screenshot to clipboard  
@@ -71,8 +71,16 @@ EndSection
 Thanks to [Cody Craven](https://cravencode.com/post/essentials/enable-tap-to-click-in-i3wm/)
 
 ## Sound Setting
+The key code is `XF86AudioMicMute` which you can bind in you i3 config to mute the microphone.
+The command to mute the current default microphone should be
+
+```
+pactl set-source-mute @DEFAULT_SOURCE@ toggle
+```
 
 https://askubuntu.com/a/14083/25025
+https://askubuntu.com/a/1249744/25025
+https://forum.manjaro.org/t/muting-microphone-with-fn-f4-function-shortcuts-issue/121038/5
 
 ## i3lock with clock
 
